@@ -91,7 +91,7 @@ VERSIONS = {
     "com_google_guava_guava_android": {
         "type": "jvm_maven_import_external",
         "artifact": "com.google.guava:guava:27.0.1-android",
-        "server_urls": ["http://central.maven.org/maven2"],
+        "server_urls": ["https://repo1.maven.org/maven2/"],
         "artifact_sha256": "caf0955aed29a1e6d149f85cfb625a89161b5cf88e0e246552b7ffa358204e28",
     },
     "com_google_protobuf_javalite": {
@@ -182,20 +182,21 @@ VERSIONS = {
         "type": "github",
         "org": "grpc",
         "repo": "grpc-java",
-        "ref": "v1.24.2",
-        "sha256": "83bb3a29b0fcbf6d3242b5827e9e8d3683b4aad907628fcb9a37925dc9d7c867",
+        # Commit "Use https to download from Maven Central" on 1.24.x branch
+        "ref": "62e8655f1bc4dfb474afbf332ca7571c1454e6ef",
+        "sha256": "920977aa6d5beeefdf6668848589319c85d5cf3570329bab4d1a04425546e9a1",
     },
     "javax_annotation_javax_annotation_api": {
         "type": "jvm_maven_import_external",
         "artifact": "javax.annotation:javax.annotation-api:1.2",
-        "server_urls": ["http://central.maven.org/maven2"],
+        "server_urls": ["https://repo1.maven.org/maven2/"],
         "artifact_sha256": "5909b396ca3a2be10d0eea32c74ef78d816e1b4ead21de1d78de1f890d033e04",
         "licenses": ["reciprocal"], # CDDL License
     },
     "com_google_errorprone_error_prone_annotations": {
         "type": "jvm_maven_import_external",
         "artifact": "com.google.errorprone:error_prone_annotations:2.3.2",
-        "server_urls": ["http://central.maven.org/maven2"],
+        "server_urls": ["https://repo1.maven.org/maven2/"],
         "artifact_sha256": "357cd6cfb067c969226c442451502aee13800a24e950fdfde77bcdb4565a668d",
         "licenses": ["notice"], # Apache 2.0
         "binds": [
@@ -267,19 +268,19 @@ VERSIONS = {
     "scalapb_runtime": {
         "type": "jvm_maven_import_external",
         "artifact": "com.thesamet.scalapb:scalapb-runtime_2.12:jar:0.9.4",
-        "server_urls": ["http://central.maven.org/maven2"],
+        "server_urls": ["https://repo1.maven.org/maven2/"],
         "artifact_sha256": "151b9e353980bc266d4630ed1c2792712e109b02942211115afe97232b15f694",
     },
     "scalapb_runtime_grpc": {
         "type": "jvm_maven_import_external",
         "artifact": "com.thesamet.scalapb:scalapb-runtime-grpc_2.12:jar:0.9.4",
-        "server_urls": ["http://central.maven.org/maven2"],
+        "server_urls": ["https://repo1.maven.org/maven2/"],
         "artifact_sha256": "249467665168edf58690e81af17b1efb4fbdfd1c68f63b035c1ee5cbdc206eae",
     },
     "scalapb_lenses": {
         "type": "jvm_maven_import_external",
         "artifact": "com.thesamet.scalapb:lenses_2.12:jar:0.9.4",
-        "server_urls": ["http://central.maven.org/maven2"],
+        "server_urls": ["https://repo1.maven.org/maven2/"],
         "artifact_sha256": "51a82005e64c15690aabfa1641047e584b98eb01157930639c83ecea55d32b42",
     },
 
